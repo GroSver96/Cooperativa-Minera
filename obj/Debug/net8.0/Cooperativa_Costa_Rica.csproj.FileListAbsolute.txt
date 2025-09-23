@@ -1,0 +1,4 @@
+C:\Users\herna\OneDrive\Documentos\u\Ing de software\Proyecto\Cooperativa_Costa_Rica\obj\Debug\net8.0\Cooperativa_Costa_Rica.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\herna\OneDrive\Documentos\u\Ing de software\Proyecto\Cooperativa_Costa_Rica\obj\Debug\net8.0\Cooperativa_Costa_Rica.AssemblyInfoInputs.cache
+C:\Users\herna\OneDrive\Documentos\u\Ing de software\Proyecto\Cooperativa_Costa_Rica\obj\Debug\net8.0\Cooperativa_Costa_Rica.AssemblyInfo.cs
+C:\Users\herna\OneDrive\Documentos\u\Ing de software\Proyecto\Cooperativa_Costa_Rica\obj\Debug\net8.0\Cooperativa_Costa_Rica.csproj.CoreCompileInputs.cache

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Cooperativa_Costa_Rica")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f5c4a9149aa5e4e9fd8a3ba01915204b1e7f8d0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+059b62a67f430cab6435c0f212d246231984a859")]
 [assembly: System.Reflection.AssemblyProductAttribute("Cooperativa_Costa_Rica")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Cooperativa_Costa_Rica")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

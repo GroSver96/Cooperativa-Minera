@@ -1,0 +1,17 @@
+# Build results
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+*.cache
+*.json
+*.log
+*.db
+
+# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates

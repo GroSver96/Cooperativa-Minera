@@ -1,0 +1,99 @@
+using System;
+using System.Collections.Generic;
+
+public class Gerencia
+{
+    public string NombreGerente { get; set; }
+    public List<string> Socios { get; set; } = new List<string>();
+    public List<string> Reportes { get; set; } = new List<string>();
+
+    public void GenerarReporte(string reporte)
+    {
+        Reportes.Add(reporte);
+        Console.WriteLine($"[GERENCIA] Reporte generado: {reporte}");
+    }
+
+    public void MostrarSocios()
+    {
+        Console.WriteLine("Lista de socios de la cooperativa:");
+        foreach (var socio in Socios)
+        {
+            Console.WriteLine($"- {socio}");
+        }
+    }
+}
+
+public class Inventario
+{
+    public string NombreMaterial { get; set; }
+    public int Cantidad { get; set; }
+
+    public void AgregarStock(int cantidad)
+    {
+        Cantidad += cantidad;
+        Console.WriteLine($"[INVENTARIO] Se agregaron {cantidad} unidades de {NombreMaterial}. Total: {Cantidad}");
+    }
+
+    public void ConsumirStock(int cantidad)
+    {
+        if (cantidad <= Cantidad)
+        {
+            Cantidad -= cantidad;
+            Console.WriteLine($"[INVENTARIO] Se consumieron {cantidad} unidades de {NombreMaterial}. Restante: {Cantidad}");
+        }
+        else
+        {
+            Console.WriteLine("[INVENTARIO] No hay suficiente stock disponible.");
+        }
+    }
+}
+
+public class Produccion
+{
+    public string Mineral { get; set; }
+    public double ToneladasExtraidas { get; private set; }
+    public double MetaProduccion { get; set; }
+
+    public void RegistrarExtraccion(double toneladas)
+    {
+        ToneladasExtraidas += toneladas;
+        Console.WriteLine($"[PRODUCCIÓN] Se registraron {toneladas} toneladas de {Mineral}. Total: {ToneladasExtraidas}");
+    }
+
+    public void VerificarMeta()
+    {
+        if (ToneladasExtraidas >= MetaProduccion)
+        {
+            Console.WriteLine("[PRODUCCIÓN]  Meta alcanzada o superada.");
+        }
+        else
+        {
+            Console.WriteLine($"[PRODUCCIÓN] ⚠ Faltan {MetaProduccion - ToneladasExtraidas} toneladas para cumplir la meta.");
+        }
+    }
+}
+
+
+public class ProgramaCooperativa
+{
+    public static void Main(string[] args)
+    {
+        // Crear módulo de Gerencia
+        Gerencia gerencia = new Gerencia { NombreGerente = "Ing. Pérez" };
+        gerencia.Socios.Add("Socio 1");
+        gerencia.Socios.Add("Socio 2");
+        gerencia.GenerarReporte("Producción Semanal");
+
+        // Crear módulo de Inventario
+        Inventario inventario = new Inventario { NombreMaterial = "Explosivos", Cantidad = 100 };
+        inventario.ConsumirStock(20);
+        inventario.AgregarStock(50);
+
+        // Crear módulo de Producción
+        Produccion produccion = new Produccion { Mineral = "Estaño", MetaProduccion = 500 };
+        produccion.RegistrarExtraccion(200);
+        produccion.VerificarMeta();
+        produccion.RegistrarExtraccion(350);
+        produccion.VerificarMeta();
+    }
+}

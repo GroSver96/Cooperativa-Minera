@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\herna\\OneDrive\\Documentos\\u\\Ing de software\\Proyecto\\Cooperativa_Costa_Rica\\SistemaCooperativa.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\herna\\OneDrive\\Documentos\\u\\Ing de software\\Proyecto\\Cooperativa_Costa_Rica\\SistemaCooperativa.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\herna\\OneDrive\\Documentos\\u\\Ing de software\\Proyecto\\Cooperativa_Costa_Rica\\SistemaCooperativa.csproj",
+        "projectName": "SistemaCooperativa",
+        "projectPath": "C:\\Users\\herna\\OneDrive\\Documentos\\u\\Ing de software\\Proyecto\\Cooperativa_Costa_Rica\\SistemaCooperativa.csproj",
+        "packagesPath": "C:\\Users\\herna\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\herna\\OneDrive\\Documentos\\u\\Ing de software\\Proyecto\\Cooperativa_Costa_Rica\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\herna\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0-windows"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0-windows7.0": {
+            "targetAlias": "net8.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0-windows7.0": {
+          "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.1.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WindowsForms": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
